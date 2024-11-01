@@ -30,7 +30,7 @@ st.write('**** 공부시간을 입력하세요.. 인공지능이 당신의 합�
 # 사용자 입력
 a = st.number_input(' 수강과목수입력 ', value=0)
 b = st.number_input(' 공부시간 입력 ', value=0)
-c= st.radio('원하는 옵션을 선택하세요:', [1,2])
+c= st.selectbox('원하는 옵션을 선택하세요:', [1,2])
 
 # 예측 버튼 만들기
 if st.button('예측'):
