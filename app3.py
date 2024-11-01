@@ -31,4 +31,4 @@ b = st.number_input(' 공부시간 입력 ', value=0)
 if st.button('예측'):
         input_data = [[a,b]]
         p = model.predict(input_data)
-        st.write('점수는',str(p))
+        st.write('점수는',p)
