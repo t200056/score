@@ -24,10 +24,11 @@ st.subheader('3. 예측하기')
 st.write('**** 공부시간을 입력하세요.. 인공지능이 당신의 합격/불합격 분류 결과를 알려드립니다!')
 
 # 사용자 입력
-a = st.number_input(' 수강과목수, 공부시간 입력 ', value=0)
+a = st.number_input(' 수강과목수입력 ', value=0)
+b = st.number_input(' 공부시간 입력 ', value=0)
 
 # 예측 버튼 만들기
 if st.button('예측'):
-        input_data = [[a]]
+        input_data = [[a,b]]
         p = model.predict(input_data)
         st.write(p)
