@@ -1,11 +1,11 @@
 import streamlit as st
 
-#  기계학습 모델 파일 로드(모델명 : logistic_regression_model.pkl)
+#  기계학습 모델 파일 로드
 import joblib
-model = joblib.load('logistic_regression_model.pkl')
+model = joblib.load('linear_regression_model.pkl')
 
 # 만든 모델로 테스트 데이터에 대해 예측하기
-st.title('___________________')
+st.title('점수 예측')
 
 col1, col2 = st.columns(2)
 
@@ -17,16 +17,17 @@ with col1:
       st.write(' - 훈련    데이터 : 21건')
       st.write(' - 테스트 데이터 : 9건')
 with col2:
-      st.subheader('____________________')
-      st.image('chart.PNG' )   # 이미지 불러오기
+      st.subheader('2. 데이터 시각화')
+      st.image('시각화1.PNG' )   # 이미지 불러오기
 
-st.subheader('______________________')
+st.subheader('3. 예측하기')
 st.write('**** 공부시간을 입력하세요.. 인공지능이 당신의 합격/불합격 분류 결과를 알려드립니다!')
 
 # 사용자 입력
-a = st.number_input(' ______ ', value=0)
+a = st.number_input(' 수강과목수, 공부시간 입력 ', value=0)
 
 # 예측 버튼 만들기
 if st.button('예측'):
         input_data = [[a]]
         p = model.predict(input_data)
+        st.write(p)
