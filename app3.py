@@ -7,7 +7,7 @@ model = joblib.load('linear_regression_model.pkl')
 # 만든 모델로 테스트 데이터에 대해 예측하기
 st.title('점수 예측')
 
-col1, col2 = st.columns(2)
+col1, col2, col3 = st.columns(3)
 
 with col1:
       st.subheader(' ______________________ ')
@@ -19,6 +19,9 @@ with col1:
 with col2:
       st.subheader('2. 데이터 시각화')
       st.image('시각화1.png' )   # 이미지 불러오기
+with col3:
+      st.subheader('3. 데이터 시각화')
+      st.image('시각화2.png' )   # 이미지 불러오기
 
 st.subheader('3. 예측하기')
 st.write('**** 공부시간을 입력하세요.. 인공지능이 당신의 합격/불합격 분류 결과를 알려드립니다!')
