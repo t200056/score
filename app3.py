@@ -7,11 +7,11 @@ model = joblib.load('linear_regression_model.pkl')
 # 만든 모델로 테스트 데이터에 대해 예측하기
 st.title('점수 예측')
 st.subheader(' ______________________ ')
-      st.write(' - 기계학습 알고리즘 : 로지스틱 회귀 ')
-      st.write(' - 학습 데이터 출처 : https://www.kaggle.com/')
-      st.write(' - 총 데이터 건 수: 30건')
-      st.write(' - 훈련    데이터 : 21건')
-      st.write(' - 테스트 데이터 : 9건')
+st.write(' - 기계학습 알고리즘 : 로지스틱 회귀 ')
+st.write(' - 학습 데이터 출처 : https://www.kaggle.com/')
+st.write(' - 총 데이터 건 수: 30건')
+st.write(' - 훈련    데이터 : 21건')
+st.write(' - 테스트 데이터 : 9건')
 col1, col2, col3 = st.columns(3)
 
 with col1:
