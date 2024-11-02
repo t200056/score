@@ -22,7 +22,7 @@ with col2:
       st.image('시각화3.png' )   # 이미지 불러오기
 with col3:
       st.subheader('4. 상관관계')
-      st.image('시각화4.png')   # 이미지 불러오기
+#      st.image('시각화4.png')   # 이미지 불러오기
 
 st.subheader('3. 예측하기')
 st.write('**** 공부시간을 입력하세요.. 인공지능이 당신의 합격/불합격 분류 결과를 알려드립니다!')
