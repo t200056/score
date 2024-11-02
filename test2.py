@@ -26,7 +26,7 @@ with col3:
       st.subheader('   상관관계')
       st.image('시각화3.png')   # 이미지 불러오기
 
-st.subheader('3. 예측하기')
+st.subheader('예측하기')
 st.write('**** 다음을 입력하세요.. 인공지능이 당신의 점수를 알려드립니다!')
 
 # 4.사용자 입력
