@@ -23,7 +23,7 @@ with col2:
       st.subheader('공부시간&점수')
       st.image('시각화2.png' )   # 이미지 불러오기
 with col3:
-      st.subheader('상관관계')
+      st.subheader('   상관관계')
       st.image('시각화3.png')   # 이미지 불러오기
 
 st.subheader('3. 예측하기')
