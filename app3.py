@@ -6,7 +6,7 @@ model = joblib.load('linear_regression_model.pkl')
 
 # 모델 설명
 st.title('점수 예측 에이전트')
-st.subheader('대학생의 수강과목수, 공부시간, 평소 공지확인 습관에 따른 점수 예측')
+st.subheader('수강과목수, 공부시간, 공지확인 습관에 따른 점수 예측')
 st.write(' - 기계학습 알고리즘 : 로지스틱 회귀 ')
 st.write(' - 학습 데이터 출처 : https://www.kaggle.com/')
 st.write(' - 총 데이터 건 수: **건')
