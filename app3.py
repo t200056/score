@@ -17,10 +17,10 @@ st.write(' - 인공지능 모델 정확도 : ****')
 # 3.데이터 시각화
 col1, col2, col3 = st.columns(3)
 with col1:
-      st.subheader('1.수강과목수&점수')
+      st.subheader('1.수강과목수')
       st.image('시각화1.png' )   # 이미지 불러오기
 with col2:
-      st.subheader('2.공부시간과&점수')
+      st.subheader('2.공부시간')
       st.image('시각화2.png' )   # 이미지 불러오기
 with col3:
       st.subheader('3.상관관계')
