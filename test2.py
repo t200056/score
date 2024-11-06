@@ -1,6 +1,6 @@
 import streamlit as st
 
-# 1.기계학습 모델 파일 로드
+# 1.기계학습 모델 파일 로드1
 import joblib
 model = joblib.load('linear_regression_model.pkl')
 
